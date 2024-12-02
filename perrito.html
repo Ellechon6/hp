@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A ti, mi bella flor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:ital@0;1&display=swap');
+
+        body {
+            background: linear-gradient(135deg, #fdeff9, #fcefe3);
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        .poem-container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.97);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            margin: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #e63975;
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+            letter-spacing: 1.5px;
+        }
+
+        .poem {
+            font-family: 'Lora', serif;
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #34495e;
+            white-space: pre-line;
+            text-align: center;
+        }
+
+        .stanza {
+            margin-bottom: 30px;
+            padding: 15px 20px;
+            border-left: 5px solid #e63975;
+            background: linear-gradient(to right, rgba(230, 57, 117, 0.05), transparent);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .stanza:hover {
+            background: linear-gradient(to right, rgba(230, 57, 117, 0.2), rgba(230, 57, 117, 0.05));
+            border-left: 5px solid #c03562;
+            transform: scale(1.02);
+        }
+
+        .stanza:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(230, 57, 117, 0.15), transparent 70%);
+            transform: rotate(45deg);
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+
+        .stanza:hover:before {
+            opacity: 1;
+        }
+
+        @media (max-width: 600px) {
+            .poem-container {
+                padding: 30px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .poem {
+                font-size: 1em;
+            }
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="poem-container">
+        <h1>A ti, mi bella flor 👀 LINDOS</h1>
+        <div class="poem">
+            <div class="stanza">
+                Eres ternura que se esconde
+                en los gestos de tu alma,
+                un susurro de amor que responde
+                a cada necesidad, que calma.
+            </div>
+
+            <div class="stanza">
+                Tus ojos, dos estrellas brillantes,
+                refugio de paz y comprensión,
+                tus manos, suaves y constantes,
+                tejen sueños con dedicación.
+            </div>
+
+            <div class="stanza">
+                Cultura en tus palabras,
+                sabiduría en tu andar,
+                tu mente es un océano
+                donde el saber se sabe amar.
+            </div>
+
+            <div class="stanza">
+                Emprendedora de tu destino,
+                con valentía y sin miedo,
+                te has hecho fuerza en el camino,
+                creando un mundo en cada credo.
+            </div>
+
+            <div class="stanza">
+                Tu amorosa esencia inspira
+                y florece con cada paso,
+                eres un ser que motiva,
+                un faro, un rayo de abrazo.
+            </div>
+
+            <div class="stanza">
+                Linda mujer, de alma noble,
+                de cariño infinito y fiel,
+                en ti se encuentran los dones
+                que hacen al mundo más bien.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
